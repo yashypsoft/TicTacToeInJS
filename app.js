@@ -210,6 +210,13 @@ function checkResult(){
     else if (block2.textContent==="O" && block4.textContent=="O"  && block6.textContent=="O"){
         alert("Player "+ (activePlayer+1) +" Winner");
         location.reload();
+    }else if(block0.textContent != "" && block1.textContent !="" && block2.textContent !="" && block3.textContent !="" &&
+    block4.textContent != "" && block5.textContent !="" && block6.textContent !="" && block7.textContent !="" &&
+    block8.textContent != ""  ){
+      alert("Draw!!! ");
+      location.reload();
+      
     }
-
+    document.querySelector(".player").innerHTML = (activePlayer+1);
 }
+
